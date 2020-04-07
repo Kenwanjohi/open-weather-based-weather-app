@@ -20,7 +20,7 @@ window.addEventListener('load', () => {
         navigator.geolocation.getCurrentPosition((position) => {
             long = position.coords.longitude;
             lat = position.coords.latitude; 
-            let apikey = '1aa23825914c640753fca8390ec5d922';
+            let apikey = '1aa238xxxxxxxxxxxd922';
             fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&units=imperial&appid=${apikey}`)
             .then(response => response.json())
             .then(res => {
